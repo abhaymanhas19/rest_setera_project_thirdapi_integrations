@@ -1,0 +1,1 @@
+sudo docker compose -f compose-files/stage/docker-compose.yml build --no-cache && sudo docker compose -f compose-files/stage/docker-compose.yml up -d

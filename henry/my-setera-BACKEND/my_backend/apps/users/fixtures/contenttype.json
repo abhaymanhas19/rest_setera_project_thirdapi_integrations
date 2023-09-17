@@ -1,0 +1,26 @@
+[
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 44,
+        "fields": {
+            "app_label": "custom_permissions",
+            "model": "dummycontenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 45,
+        "fields": {
+            "app_label": "custom_permissions",
+            "model": "Accounting"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 46,
+        "fields": {
+            "app_label": "custom_permissions",
+            "model": "accounting"
+        }
+    }
+]

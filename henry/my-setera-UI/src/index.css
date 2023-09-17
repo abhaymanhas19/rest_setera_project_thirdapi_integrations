@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto !important;
+}
+.swal2-container {
+  z-index: 10000;
+}
+/* width */
+body::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #103256;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* width */
+.cm-left-scrollbar>div::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+/* Track */
+.cm-left-scrollbar>div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.cm-left-scrollbar>div::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+.cm-left-scrollbar>div::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Global CSS */
+.ff-popins,
+.form-select-pad,
+.cm-btn-style,
+.cm-form-inner-fields .MuiInputBase-input,
+.cm-user-form-wrap .form-checkbox-text .MuiFormControlLabel-label,
+.cm-user-form-wrap .MuiFormControlLabel-label{
+  font-family: 'Poppins', sans-serif !important;
+}
+.text-right{
+  text-align: right;
+}
+.fw-600{
+  font-weight: 600;
+}
+.text-blue{
+  color: #00ADD0;
+}
+.cm-tags-chip {
+  margin: 0 10px 0 0 !important;
+}
+.cm-mobile-close {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  z-index: 10000000;
+  background: #fff;
+  padding: 1px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  display: none !important; 
+}
+@media only screen and (max-width: 900px) {
+  .cm-mobile-close {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .cm-mobile-sidebar-menu .MuiDrawer-paper {
+    width: calc(100% - 100px) !important;
+  }
+}
+/* Table CSS */
+.cm-barrring-cm-table-dt {
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.cm-barrring-cm-table-dt .cm-barrring-cm-table-hd {
+  background: #1976d2;
+}
+
+.cm-barrring-cm-table-dt .cm-barrring-cm-table-hd th {
+  color: #fff !important;
+}
+.cm-table-component .rdt_TableHeadRow {
+  background: #00ADD0;
+  color: #fff;
+}
+.cm-table-component .rdt_TableBody .rdt_TableRow {
+  border: 2px solid rgba(49, 49, 49, 0.05);
+  border-bottom: none !important;
+  border-top: none !important;
+}
+.cm-table-component .rdt_TableBody .rdt_TableRow:last-child{
+  border-bottom: 2px solid rgba(49, 49, 49, 0.05) !important;
+}
+.cm-table-component.cm-table-strip .rdt_TableBody .rdt_TableRow:nth-child(even) {
+  background: rgba(49, 49, 49, 0.03);
+}
+.cm-table-component .rdt_TableCell{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cm-table-component .rdt_TableCol{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.cm-table-main-wrapper .rdt_Pagination {
+  background: transparent;
+  justify-content: center;
+  padding-top: 25px;
+  border: none;
+}
+.cm-table-main-wrapper.cm-table-rounded {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.cm-table-main-wrapper.cm-table-rounded .cm-table-component .rdt_TableBody .rdt_TableRow:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* With White BG Table CSS */
+.cm-table-with-bg {
+  background: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  padding: 30px;
+}
+
+
+
+/* Table Responsive */
+@media only screen and (max-width: 767.98px) {
+  .cm-table-component .rdt_TableCell,
+  .cm-table-component .rdt_TableCol{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+/* Global Tabs CSS */
+.cm-global-tab-btn{
+  padding: 12px 35px !important;
+  text-transform: capitalize !important;
+  color: #000 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  border-radius: 30px !important;
+  border: none !important;
+  background: #fff !important;
+}
+.cm-global-tab-btn.tab-active {
+  background: #00ADD0 !important;
+  color: #fff !important;
+  position: relative;
+  z-index: 10;
+}
+.cm-global-tab-btn.tab-active::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #00ADD0;
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+}
+.cm-global-tabs-wrapper .cm-global-tab-inner-content {
+  background: #fff;
+  padding: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+}
+.cm-global-tabs-content {
+  margin-top: 5px;
+}
+.cm-global-tabs-component .MuiTabs-scroller.MuiTabs-fixed {
+  overflow:visible !important;
+}
+.cm-global-tabs-component .MuiTabs-scroller.MuiTabs-fixed::-webkit-scrollbar {
+  height: 5px;
+}
+.cm-global-tabs-component span.MuiTabs-indicator {
+  display: none;
+}
+.cm-global-tab-btn-wrapper{
+  width: 100%;
+}
+@media only screen and (max-width: 767.98px) {
+  .cm-global-tab-btn-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .cm-global-tab-btn.tab-active::after{
+    display: none;
+  }
+  .cm-global-tabs-wrapper .cm-global-tab-btn {
+    width: 48%;
+    font-size: 14px !important;
+    margin-bottom: 15px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cm-global-tabs-wrapper .cm-global-tab-btn {
+    width: 100%;
+  }
+}
+
+
+
+/* Page Global CSS */
+@media only screen and (max-width: 576px) {
+  .cm-page-topbar-title {
+    font-size: 15px !important;
+    line-height: 20px !important;
+}
+}
+
+
+.cm-date-picker-field {
+  padding: 17.5px 12px !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  width: 100%;
+  }
+  
+  .cm-datepicker-wrappwer .react-datepicker__close-icon {
+    right: 10px;
+}
+.cm-paginate-data-table {
+  position: relative;
+}
+.cm-dropdown-listing-wrap {
+  position: absolute;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 5px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.cm-org-list-item {
+  padding: 5px 10px 0 !important;
+  font-size: 14px;
+}
+.cm-loader-wrap {}
+
+.cm-loader-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background: #ffffff8c;
+  pointer-events: none;
+}
